@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--SCmake页面Spanner下拉的每一个item-->
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_spinner_searchtype"
+    style="@style/SearchSpinnerItemSytle" />

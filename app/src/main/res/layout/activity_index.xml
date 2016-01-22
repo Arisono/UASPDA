@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.uas.uaspda.MenuActivity">
+
+    <include
+        android:id="@+id/include_menuactionbar"
+        layout="@layout/actionbar"/>
+    <RelativeLayout
+        android:id="@+id/ll_content"
+        android:layout_below="@id/include_menuactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/actionbar_height">
+
+        <GridView
+            android:id="@+id/grid_menu"
+            style="@style/MenuGridViewStyle"
+            android:numColumns="2">
+
+        </GridView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/root_container"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+</RelativeLayout>

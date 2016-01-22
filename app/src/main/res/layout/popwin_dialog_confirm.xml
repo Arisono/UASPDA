@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_confirm"
+        style="@style/PopWinStyle">
+
+        <RelativeLayout
+            style="@style/PopWinContentWithViewStyle">
+            <LinearLayout
+                style="@style/PopWinContentStyle">
+                <TextView
+                    android:id="@+id/title_dialog_confirm"
+                    android:layout_marginRight="@dimen/space_right_24"
+                    android:layout_marginLeft="@dimen/space_left_24"
+                    style="@style/PopWinTitleStyle"
+                    android:text="提示"/>
+                <com.uas.uaspda.customview.CustomScrollView
+                    android:layout_below="@id/title_dialog_confirm"
+                    android:id="@+id/sl_popwin_confirm"
+                    android:layout_marginRight="@dimen/space_right_24"
+                    android:layout_marginLeft="@dimen/space_left_24"
+                    android:layout_marginBottom="@dimen/space_bottom_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_dialog_confirm_notice"
+                        style="@style/PopWinContentTextStyle"/>
+                </com.uas.uaspda.customview.CustomScrollView>
+                <RelativeLayout
+                    android:layout_below="@id/sl_popwin_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_56">
+                    <Button
+                        android:id="@+id/btn_dialog_confirm_ok"
+                        style="@style/PopwinOKButtonStyle"
+                        android:text="ok"/>
+                    <Button
+                        android:id="@+id/btn_dialog_confirm_cancel"
+                        android:layout_toLeftOf="@id/btn_dialog_confirm_ok"
+                        style="@style/PopwinCancleButtonStyle"
+                        android:text="cancel"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

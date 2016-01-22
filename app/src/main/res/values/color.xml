@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="bg_loading">#66000000</color>
+    <color name="text_search">#40ABE1</color>
+    <color name="background">#F0FFFF</color>
+    <color name="start">#F0FFFF</color>
+    <color name="end">#f0ffff</color>
+    <color name="button_normal">#7AB9EE</color>
+    <color name="griditem_pressed">#7AB9EE</color>
+    <color name="bg_edittext_search">#7AB9EE</color>
+    <color name="bg_popwin_search">#667AB9EE</color>
+    <color name="button">#2475FB</color>
+    <color name="actionbar">#2475FB</color>
+    <color name="line">#60ADC1</color>
+    <color name="notice">#C0C0C0</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="button_cautious_focus">#FF4081</color>
+    <color name="button_cautious_normal">#FF80AB</color>
+    <color name="gray_text">#F0FFFF</color>
+    <color name="gray_blue">#56abe4</color>
+
+    <!--ListView Refresh-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_list">#aaaaaa</color>
+    <color name="light_blue_list">#6593cb</color>
+
+    <color name="gray">#808A87</color>
+    <color name="light_blue">#AAE5FF</color>
+    <color name="blueq">#3875D6</color>
+    <color name="blue">#33A1C9</color>
+    <color name="sky_blue">#B0E0E6</color>
+    <color name="black_blue">#091027</color>
+    <color name="green">#14B16C</color>
+    <color name="red">#ff0000</color>
+
+    <color name="blueq1">#3875D6</color>
+    <color name="blue1">#33A1C9</color>
+    <color name="gray1">#808A87</color>
+    <color name="sky_blue1">#B0E0E6</color>
+    <color name="light_blue1">#AAE5FF</color>
+    <color name="black_blue1">#091027</color>
+
+    <color name="start1">#BDE1EF</color>
+    <color name="end1">#5CC0E0</color>
+    <color name="button1">#E6C69D</color>
+    <color name="line1">#60ADC1</color>
+
+
+    <color name="start2">#D4E8CD</color>
+    <color name="end2">#97CFB7</color>
+    <color name="button2">#14B16C</color>
+    <color name="line2">#60ADC1</color>
+
+    <color name="button3">#5A9AA8</color>
+
+</resources>

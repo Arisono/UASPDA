@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionBar">
+
+    <Button
+        android:id="@+id/btn_actionbar_withback"
+        style="@style/ActionBarLeftButton"/>
+    <Button
+        android:id="@+id/btn_actionbar_right"
+        style="@style/ActionBarRightButton"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_actionbar_withback"
+        android:layout_marginRight="@dimen/width_56">
+        <TextView
+            android:id="@+id/tv_actionbar_withback"
+            style="@style/ActionBarTextView"
+            android:text="!!!"/>
+        <!--<com.uas.uaspda.customview.ClearableEditText
+            android:id="@+id/et_actionbar_withback"
+            style="@style/ActionBarEditText"/>-->
+        <!--<EditText
+            android:id="@+id/et_actionbar_withback"
+            style="@style/ActionBarEditText"/>-->
+    </RelativeLayout>
+</RelativeLayout>

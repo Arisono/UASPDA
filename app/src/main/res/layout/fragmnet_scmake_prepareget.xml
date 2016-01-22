@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--上部：采集EditTEXT+确认Button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_background"
+        style="@style/PopUpperLayoutStyle">
+        <com.uas.uaspda.customview.ClearableEditText
+            android:id="@+id/et_collect_scmake"
+            android:hint="@string/hint_search_collect_fragment_scmake"
+            android:inputType="text"
+            style="@style/PopWinEditTextStyle" />
+        <TextView
+            android:id="@+id/btn_collect_scmake"
+            style="@style/PopWinButtonStyle"
+            android:text="@string/btn_search_collect_fragment_scmake"/>
+    </LinearLayout>
+    <!--中部：提示TEXTView+显示TextView-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        style="@style/PopWinContentWithViewStyle"
+        android:layout_marginLeft="@dimen/space_left_8"
+        android:layout_marginRight="@dimen/space_right_8">
+        <com.uas.uaspda.customview.ClearableEditText
+            android:id="@+id/et_collect_scmak"
+            android:hint="@string/hint_search_collect_fragment_scmake"
+            android:inputType="text"
+            style="@style/PopWinEditTextStyle" />
+        <TextView
+            style="@style/InnerNoticeTitleStyle"
+            android:text="@string/text_search_collect_fragment_scmake"/>
+        <com.uas.uaspda.customview.CustomScrollView
+            style="@style/InnerNoticeTextblockStyle">
+            <include layout="@layout/innernmsg_collect_scmake"/>
+        </com.uas.uaspda.customview.CustomScrollView>
+    </LinearLayout>
+    <!--下部：提示TextView+显示ListView-->
+    <LinearLayout
+        android:id="@+id/ll_todis"
+        style="@style/InnerNoticeLayoutStyle">
+        <TextView
+            style="@style/InnerNoticeTitleStyle"
+            android:text="@string/text_search_uncollect_fragment_scmake"/>
+
+        <!--List-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.uas.uaspda.customview.PullToRefreshLayout
+                android:id="@+id/refresh_view_scmake_collect"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/refresh_head" />
+                <!-- 支持所有实现Pullable接口的View -->
+
+                <com.uas.uaspda.customview.PullableListView
+                    android:id="@+id/content_view_scmake_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:divider="@color/gray_list"
+                    android:dividerHeight="0.1dp" />
+
+                <include layout="@layout/load_more" />
+
+            </com.uas.uaspda.customview.PullToRefreshLayout>
+            <include layout="@layout/null_item"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

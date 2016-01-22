@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--服务器提示信息-->
+    <TextView
+        android:id="@+id/tv_innernotice"
+        style="@style/innerNoticeContentTextStyle"/>
+
+    <!--采集信息-->
+    <RelativeLayout
+        android:id="@+id/rl_innernotice"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <!--备料成功/备料完成-->
+        <TextView
+            android:id="@+id/tv_innernotice_msgtitle"
+            android:text="!!!"
+            android:textColor="@color/green"
+            style="@style/innerNoticeContentTextStyle" />
+        <!--站位-->
+        <TextView
+            android:text="!!!"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_innernotice_location"
+            android:layout_below="@id/tv_innernotice_msgtitle"
+            style="@style/innerNoticeContentTextStyle" />
+        <!--数量-->
+        <TextView
+            android:text="!!!"
+            android:id="@+id/tv_innernotice_qty"
+            android:layout_below="@id/tv_innernotice_msgtitle"
+            android:layout_toRightOf="@id/tv_innernotice_location"
+            style="@style/innerNoticeContentTextStyle" />
+        <!--料卷号-->
+        <TextView
+            android:text="!!!"
+            android:id="@+id/tv_innernotice_barcode"
+            android:layout_below="@id/tv_innernotice_location"
+            style="@style/innerNoticeContentTextStyle" />
+        <!--料号-->
+        <TextView
+            android:text="!!!"
+            android:id="@+id/tv_innernotice_prodcode"
+            android:layout_below="@id/tv_innernotice_barcode"
+            style="@style/innerNoticeContentTextStyle" />
+        <!--名称规格-->
+        <TextView
+            android:text="!!!"
+            android:id="@+id/tv_innernotice_detail"
+            android:layout_below="@id/tv_innernotice_prodcode"
+            style="@style/innerNoticeContentTextStyle" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,399 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--UAS仓储管理系统 textview fragment_connectserver.xml-->
+    <style name="TextViewStyle">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/black_blue</item>
+    </style>
+
+    <!--EditText fragment_connectserver.xml-->
+    <style name="EditTextStyle">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+    <!--Spinner-->
+    <style name="SpinnerStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="SpinnerItemStyle">
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <!--SCMAKE:search spinner-->
+    <style name="SearchSpinnerDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:paddingLeft">@dimen/space_left_8</item>
+        <item name="android:windowBackground">@color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+    <style name="SearchSpinnerItemSytle">
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/search_edittext_textsize</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--CheckBox-->
+    <style name="CheckBoxStyle">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!--Button-->
+    <style name="ButtonStyle">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/bg_button</item>
+    </style>
+    <!--Button-text-->
+    <style name="TextButton">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/button</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--GridView-->
+    <style name="MenuGridViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:verticalSpacing">20dp</item>
+        <item name="android:horizontalSpacing">20dp</item>
+    </style>
+
+    <style name="InoutMenuGridViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:verticalSpacing">20dp</item>
+        <item name="android:horizontalSpacing">20dp</item>
+    </style>
+    <style name="Background">
+        <item name="android:background">@color/background</item>
+    </style>
+    <!--版本 textview root_copyright.xml-->
+    <style name="RootText">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="RootInclude">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+
+    <!--Actionbar-->
+    <style name="ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/actionbar</item>
+    </style>
+    <style name="ActionBarTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <style name="ActionBarEditText">
+        <item name="android:hint">@string/hint_search_prepare_fragment_scmake</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textColorHint">@color/gray_text</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/bg_button_search</item>
+    </style>
+    <style name="ActionBarLeftButton">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">@dimen/width_48</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/actionbar_back</item>
+    </style>
+    <style name="ActionBarRightButton">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">@dimen/width_48</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/search_48</item>
+    </style>
+    <!--notice-->
+    <style name="NoticeTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/bg_notice</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:translationZ">120dp</item>
+    </style>
+    <style name="ShowSearchButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:text">@string/btn_search_fragment_inmake</item>
+        <item name="android:background">@drawable/bg_button_search</item>
+    </style>
+    <!--popwin search-->
+    <style name="PopUpperLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:layout_marginLeft">@dimen/space_left_search</item>
+        <item name="android:layout_marginRight">@dimen/space_right_search</item>
+        <item name="android:layout_marginTop">@dimen/space_up_search</item>
+        <item name="android:layout_marginBottom">@dimen/space_bottom_search</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="PopWinEditTextLayoutStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:background">@drawable/bg_button_search</item>
+    </style>
+    <style name="PopWinSpinnerItemLayoutStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:background">@drawable/bg_button_search</item>
+    </style>
+    <style name="PopWinEditTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textSize">@dimen/search_edittext_textsize</item>
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textColorHint">@color/gray_text</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_button_search</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+    <style name="PopWinEditButtonStyle">
+        <item name="android:layout_width">@dimen/search_background</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:background">@drawable/spinner_down_white</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="PopWinButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/search_background</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/bg_edittext_search</item>
+        <item name="android:text">@string/btn_search_fragment_inmake</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <style name="PopBackButtonStyle">
+        <item name="android:layout_width">@dimen/width_32</item>
+        <item name="android:layout_height">@dimen/height_32</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/close</item>
+    </style>
+    <style name="PopMenuItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/popmenuItemHeight_48</item>
+        <item name="android:layout_marginRight">@dimen/space_vertical_24</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <!--Setting-->
+    <style name="SettingListBlockStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/space_left_16</item>
+        <item name="android:paddingRight">@dimen/space_right_16</item>
+        <item name="android:layout_marginTop">@dimen/space_top_8</item>
+        <item name="android:layout_marginBottom">@dimen/space_bottom_7</item>
+    </style>
+    <style name="SettingListItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_settinglist</item>
+    </style>
+    <style name="SettingListImgStyle">
+        <item name="android:layout_width">@dimen/width_24</item>
+        <item name="android:layout_height">@dimen/height_24</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="SettingListTitleTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_24</item>
+        <item name="android:layout_marginLeft">@dimen/space_left_8</item>
+        <item name="android:layout_marginRight">@dimen/space_right_8</item>
+        <item name="android:textSize">@dimen/textsize_18</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="SettingListBodyTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_24</item>
+        <item name="android:layout_marginLeft">@dimen/space_left_8</item>
+        <item name="android:layout_marginRight">@dimen/space_right_8</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="SettingListBtnStyle">
+        <item name="android:layout_width">@dimen/width_48</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:background">@drawable/unfolder_more</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="LineViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/button_normal</item>
+    </style>
+    <!--dialog-->
+    <style name="PopWinStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:translationZ">50dp</item>
+    </style>
+    <style name="PopWinContentWithViewStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:transformPivotY">50dp</item>
+        <item name="android:layout_marginLeft">@dimen/space_popwin</item>
+        <item name="android:layout_marginRight">@dimen/space_popwin</item>
+        <item name="android:background">@drawable/bg_popwin</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="InnerNoticeLayoutStyle" parent="PopWinContentWithViewStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/space_left_inner</item>
+        <item name="android:layout_marginRight">@dimen/space_right_inner</item>
+        <item name="android:layout_marginTop">@dimen/space_top_inner</item>
+        <item name="android:layout_marginBottom">@dimen/space_bottom_inner</item>
+    </style>
+    <style name="PopWinContentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/space_top_24</item>
+        <item name="android:layout_marginBottom">@dimen/space_bottom_8</item>
+    </style>
+    <style name="InnerNoticeTextblockStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_height_content_inner</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">@dimen/space_bottom_8</item>
+    </style>
+    <style name="PopWinTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/title_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_search</item>
+        <item name="android:layout_marginBottom">@dimen/space_bottom_search_8</item>
+    </style>
+    <style name="InnerNoticeTitleStyle" parent="PopWinTitleStyle">
+        <item name="android:layout_marginTop">@dimen/space_top_inner</item>
+        <item name="android:layout_marginLeft">@dimen/space_left_inner</item>
+    </style>
+    <style name="PopWinContentTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_18</item>
+    </style>
+    <style name="innerNoticeContentTextStyle" parent="PopWinContentTextStyle">
+        <item name="android:layout_marginLeft">@dimen/space_left_inner</item>
+        <item name="android:layout_marginRight">@dimen/space_right_inner</item>
+    </style>
+    <style name="PopwinOKButtonStyle" parent="PopwinCancleButtonStyle">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:text">OK</item>
+        <item name="android:layout_marginRight">@dimen/space_right_8</item>
+    </style>
+    <style name="PopwinCancleButtonStyle">
+        <item name="android:layout_marginRight">@dimen/space_right_16</item>
+        <item name="android:layout_width">@dimen/width_64</item>
+        <item name="android:layout_height">@dimen/height_btn_popwin_48</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginTop">@dimen/space_top_button_search_16</item>
+        <item name="android:background">@drawable/bg_popbutton</item>
+        <item name="android:textColor">@color/text_search</item>
+        <item name="android:text">Cancel</item>
+    </style>
+    <style name="ButtonWithDrawStyle" parent="PopWinEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_buttoncatious</item>
+        <item name="android:layout_marginTop">@dimen/space_top_inner</item>
+    </style>
+</resources>

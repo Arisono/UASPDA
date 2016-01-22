@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/TextViewStyle"
+            android:text="@string/text_fragment_login_title" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <Spinner
+            android:id="@+id/sp_login"
+            style="@style/SpinnerStyle"
+            android:background="@drawable/bg_spinner"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/line" />
+
+        <com.uas.uaspda.customview.ClearableEditText
+            android:id="@+id/et_user_login"
+            style="@style/EditTextStyle"
+            android:hint="@string/hint_fragment_login_user" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/line" />
+
+        <com.uas.uaspda.customview.ClearableEditText
+            android:id="@+id/et_pwd_login"
+            style="@style/EditTextStyle"
+            android:password="true"
+            android:hint="@string/hint_fragment_login_pwd" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/chbx_login"
+                style="@style/CheckBoxStyle"
+                android:text="@string/chbx_fragment_login_remember" />
+            <Button
+                android:id="@+id/button_problem_login"
+                android:layout_toRightOf="@id/chbx_login"
+                android:layout_alignParentRight="true"
+                style="@style/TextButton"
+                android:text="@string/btn_fragment_problem_login" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/button_login_login"
+            style="@style/ButtonStyle"
+            android:text="@string/text_fragment_login_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/notice"/>
+    <include
+        android:id="@+id/include_connect"
+        layout="@layout/root_copyright"
+        style="@style/RootInclude"/>
+</RelativeLayout>

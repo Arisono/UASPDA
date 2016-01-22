@@ -1,0 +1,17 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/PopMenuItemStyle">
+    <ImageView
+        android:id="@+id/iv_item_popmenu_inmakelocal"
+        android:layout_width="24dp"
+        android:layout_marginRight="@dimen/space_vertical_16"
+        android:layout_height="24dp" />
+    <TextView
+        android:id="@+id/tv_item_popmenu_inmakelocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_vertical_16"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16"/>
+</LinearLayout>

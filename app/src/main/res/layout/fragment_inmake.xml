@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_inmake"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!--SearchButton-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_background"
+        android:layout_marginLeft="@dimen/space_left_8"
+        android:layout_marginRight="@dimen/space_left_8"
+        android:layout_marginTop="@dimen/space_top_8"
+        android:layout_marginBottom="@dimen/space_bottom_7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <com.uas.uaspda.customview.SearchButton
+            android:id="@+id/btn_showsearch_inmake"
+            style="@style/ShowSearchButtonStyle"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--List-->
+        <com.uas.uaspda.customview.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/refresh_head" />
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <com.uas.uaspda.customview.PullableListView
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@color/gray_list"
+                android:dividerHeight="0.1dp" />
+
+            <include layout="@layout/load_more" />
+
+        </com.uas.uaspda.customview.PullToRefreshLayout>
+        <include layout="@layout/null_item"/>
+    </RelativeLayout>
+</LinearLayout>

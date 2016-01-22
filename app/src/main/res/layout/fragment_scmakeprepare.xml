@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--List-->
+    <com.uas.uaspda.customview.PullToRefreshLayout
+        android:id="@+id/refresh_view_makeprepare"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.uas.uaspda.customview.PullableListView
+            android:id="@+id/content_list_makeprepare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/gray_list"
+            android:dividerHeight="0.1dp" />
+
+        <include layout="@layout/load_more" />
+
+    </com.uas.uaspda.customview.PullToRefreshLayout>
+    <include layout="@layout/null_item"/>
+</RelativeLayout>

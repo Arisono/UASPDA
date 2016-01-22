@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/connect_linear"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:id="@+id/tv_title_connectserver_fragment"
+            style="@style/TextViewStyle"
+            android:text="@string/text_fragment_serverconnect_title"/>
+
+        <com.uas.uaspda.customview.ClearableEditText
+            android:id="@+id/et_ip_connectserver_fragment"
+            style="@style/EditTextStyle"
+
+            android:layout_marginTop="15dp"
+            android:hint="@string/hint_fragment_serverconnect_ip"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/line"/>
+        <com.uas.uaspda.customview.ClearableEditText
+            android:id="@+id/et_port_connectserver_fragment"
+            style="@style/EditTextStyle"
+            android:imeOptions="actionDone"
+            android:hint="@string/hint_fragment_serverconnect_port"/>
+
+        <Button
+            android:id="@+id/btn_submit_conncetserver_fragment"
+            style="@style/ButtonStyle"
+            android:translationZ="120dp"
+            android:text="@string/btn_fragment_serverconnect_submit"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="135dp"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/notice"/>
+    <include
+        android:id="@+id/include_connect"
+        layout="@layout/root_copyright"
+        style="@style/RootInclude"/>
+</RelativeLayout>

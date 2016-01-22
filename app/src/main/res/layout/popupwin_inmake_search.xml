@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_inmake_search"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!--搜索框-->
+    <LinearLayout
+        android:id="@+id/ll_upperlayout_inmake"
+        style="@style/PopUpperLayoutStyle">
+        <RelativeLayout
+            android:layout_width="@dimen/search_background"
+            android:layout_height="@dimen/search_background"
+            android:layout_marginRight="8dp">
+            <Button
+                android:id="@+id/btn_close_search"
+                style="@style/PopBackButtonStyle" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_search_inmake"
+            style="@style/PopWinEditTextLayoutStyle">
+            <com.uas.uaspda.customview.ClearableEditText
+                android:id="@+id/et_search_inmake"
+                android:hint="@string/hint_search_fragment_inmake"
+                style="@style/PopWinEditTextStyle" />
+            <Button
+                android:id="@+id/btn_spinner_inmake"
+                style="@style/PopWinEditButtonStyle" />
+        </LinearLayout>
+        <!-- <EditText
+             android:id="@+id/et_search_inmake"
+             style="@style/PopWinEditTextStyle" />-->
+        <TextView
+            android:id="@+id/btn_search"
+            style="@style/PopWinButtonStyle"/>
+    </LinearLayout>
+
+    <!--List-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_top_8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.uas.uaspda.customview.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <com.uas.uaspda.customview.PullableListView
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@color/gray_list"
+                android:dividerHeight="0.1dp" />
+
+            <include layout="@layout/load_more" />
+
+        </com.uas.uaspda.customview.PullToRefreshLayout>
+        <!--显示区-->
+
+        <include layout="@layout/null_item"/>
+    </RelativeLayout>
+</LinearLayout>
